@@ -1,0 +1,27 @@
+{
+    "id": "fake_payout_link_id",
+    "entity": "payout_link",
+    "contact_id": "fake_contactid",
+    "contact": {
+      "name": "Gaurav Kumar",
+      "email": "gaurav.kumar@example.com",
+      "contact": "912345678"
+    },
+    "fund_account_id": null,
+    "purpose": "refund",
+    "status": "issued",
+    "amount": 1000,
+    "currency": "INR",
+    "description": "Payout link for Gaurav Kumar",
+    "attempt_count": 0,
+    "receipt": "Receipt No. 1",
+    "notes": {
+      "notes_key_1":"Tea, Earl Grey, Hot",
+      "notes_key_2":"Tea, Earl Grey… decaf."
+    },
+    "short_url": "https://rzp.io/i/3b1Tw6",
+    "send_sms": true,
+    "send_email": true,
+    "cancelled_at": null,
+    "created_at": 1545383037
+  }

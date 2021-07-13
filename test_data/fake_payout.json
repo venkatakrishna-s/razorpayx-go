@@ -1,0 +1,22 @@
+{
+    "id": "fake_payoutid",
+    "entity": "payout",
+    "fund_account_id": "fake_fa_id",
+    "amount": 100,
+    "currency": "INR",
+    "notes": {
+      "notes_key_1":"Tea, Earl Grey, Hot",
+      "notes_key_2":"Tea, Earl Grey… decaf."
+    },
+    "fees": 0,
+    "tax": 0,
+    "status": "queued",
+    "utr": null,
+    "mode": "IMPS",
+    "purpose": "refund",
+    "reference_id": "Acme Transaction ID 12345",
+    "narration": "Acme Corp Fund Transfer",
+    "batch_id": null,
+    "failure_reason": null,
+    "created_at": 1545383037
+  }

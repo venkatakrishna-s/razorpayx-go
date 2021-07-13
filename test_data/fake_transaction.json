@@ -1,0 +1,55 @@
+{
+    "entity":"collection",
+    "count":2,
+    "items":[
+      {
+        "id":"fake_txn_id",
+        "entity":"transaction",
+        "account_number":"1121431121541121",
+        "amount":10000000,
+        "currency":"INR",
+        "credit":10000000,
+        "debit":0,
+        "balance":10000000,
+        "source":{
+          "id":"fake_bt_id",
+          "entity":"bank_transfer",
+          "payer_name":"Saurav Kumar",
+          "payer_account":"6543266545411243",
+          "payer_ifsc":"UTIB0000002",
+          "mode":"NEFT",
+          "bank_reference":"AXIR000000000001",
+          "amount":10000000
+        },
+        "created_at":1545125568
+      },
+      {
+        "id":"txn_00000000000003",
+        "entity":"transaction",
+        "account_number":"7878780080316316",
+        "amount":1000000,
+        "currency":"INR",
+        "credit":0,
+        "debit":1000000,
+        "balance":9000000,
+        "source":{
+          "id":"pout_00000000000001",
+          "entity":"payout",
+          "fund_account_id":"fa_00000000000001",
+          "amount":1000000,
+          "notes":{
+            "notes_key_1": "Tea, Earl Grey, Hot",
+            "notes_key_2": "Tea, Earl Grey… decaf."
+          },
+          "fees":3,
+          "tax":1,
+          "status":"processed",
+          "utr":"000000000001",
+          "mode":"NEFT",
+          "created_at":1545224066,
+          "fee_type": null
+        },
+        "created_at":1545224066
+      }
+    ]
+  }
