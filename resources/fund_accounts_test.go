@@ -28,7 +28,7 @@ func TestFaCreate(t *testing.T) {
 		"account_type": "bank_account",
 		"bank_account": bank_acc,
 	}
-	body, err := utils.Client.Fund_Account.Create(req_params, nil, false)
+	body, err := utils.Client.Fund_Account.Create(req_params, nil)
 	jsonByteArray, _ := json.Marshal(body)
 	assert.Equal(t, err, nil)
 	utils.TestResponse(jsonByteArray, []byte(fixture), t)
