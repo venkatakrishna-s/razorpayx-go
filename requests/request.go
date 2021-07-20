@@ -185,7 +185,7 @@ func (request *Request) Patch(path string, payload map[string]interface{}, optio
 }
 
 //For fund account creation via public API call ...
-func (request *Request) Public(path string, payload map[string]interface{}, options map[string]string) (map[string]interface{}, error) {
+/*func (request *Request) Public(path string, payload map[string]interface{}, options map[string]string) (map[string]interface{}, error) {
 
 	jsonStr, _ := json.Marshal(payload)
 
@@ -199,4 +199,4 @@ func (request *Request) Public(path string, payload map[string]interface{}, opti
 
 	return request.doRequestResponse(req)
 
-}
+}*/
