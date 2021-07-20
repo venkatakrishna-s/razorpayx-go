@@ -60,15 +60,8 @@ data := map[string]interface{}{
   "account_type":"bank_account",
   "bank_account":bank_acc,
 }
-body, err := client.Fund_Account.Create(data, option, false)
+body, err := client.Fund_Account.Create(data, option)
 ```
-Note: Fund account create requires a third boolean parameter, this is to indicate if the API call is public or private
-
-True: Public API call
-
-False: Private API call
-
-The public API call is only for fund account creation for a contact's card if you are a PCI DSS Non-Compliant Merchant.
 
 
 ### Payouts
