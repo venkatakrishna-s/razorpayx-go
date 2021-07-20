@@ -23,14 +23,8 @@ func (fa *Fund_Account) Fetch_All(data map[string]interface{}, options map[strin
 }
 
 //Create ...
-func (fa *Fund_Account) Create(data map[string]interface{}, options map[string]string, public bool) (map[string]interface{}, error) {
-	//Public API call for PCI DSS Non-Compliant Merchants and account type as card (Payout to Cards)
-	if public {
-		url := fmt.Sprintf("%s/public", constants.FUNDACCOUNTS_URL)
-		return fa.Request.Public(url, data, options)
-	} else {
+func (fa *Fund_Account) Create(data map[string]interface{}, options map[string]string) (map[string]interface{}, error) {
 		return fa.Request.Post(constants.FUNDACCOUNTS_URL, data, options)
-	}
 }
 
 //Activate or Deactivate a fund account ...
